@@ -1,0 +1,23 @@
+.BulkMailCenter {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.BulkMailCenter li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.BulkMailCenter a {
+    text-decoration: none;
+    color: black;
+}
+
+.BulkMailCenter a:hover,
+.BulkMailCenter a:active,
+.BulkMailCenter a.active {
+    color: purple;
+}

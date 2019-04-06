@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, NavLink } from 'react-router-dom';
+import './BulkMailCenter.css';
 
 function Index() {
     return <h2>Home</h2>
@@ -12,13 +13,13 @@ function Mail() {
 class BulkMailCenter extends Component {
     render() {
         return(
-            <div>
+            <div className="BulkMailCenter">
                 <h1>BulkMailCenter</h1>
                 <header>
                     <nav>
                         <ul>
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/mail">Mailing Services</Link></li>
+                            <li><NavLink to="/" exact>Home</NavLink></li>
+                            <li><NavLink to="/mail">Mailing Services</NavLink></li>
                         </ul>
                     </nav>
                 </header>

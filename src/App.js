@@ -7,7 +7,6 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <h1>City Print and Mail</h1>
           <BulkMailCenter />
         </div>
       </BrowserRouter>
