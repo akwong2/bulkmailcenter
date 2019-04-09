@@ -13,6 +13,10 @@ function Mail() {
 }
 
 class Layout extends Component {
+    state = {
+        // if mobile view
+        showSideDrawer: false
+    }
     render() {
         return (
             <Aux>

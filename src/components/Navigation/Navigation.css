@@ -1,5 +1,5 @@
 .Navigation {
-    height: 56px;
+    height: 72px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -10,7 +10,7 @@
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 90;
-    background-color: grey;
+    background-color: gray;
 }
 
 .Navigation nav {
@@ -31,4 +31,14 @@
 .Navigation a:active,
 .Navigation a.active {
     color: purple;
+}
+
+.Logo {
+    height: 4rem;
+}
+
+@media (max-width: 499px) {
+    .DesktopOnly {
+        display: none
+    }
 }
