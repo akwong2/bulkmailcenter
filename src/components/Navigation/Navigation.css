@@ -1,9 +1,50 @@
 .Navigation {
-    height: 72px;
     width: 100%;
-    position: fixed;
     top: 0;
     left: 0;
+    position: fixed;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navigation ul {
+    padding-left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Navigation li {
+    display: inline;
+    padding: 5px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 15px;
+}
+
+.FirstNav {
+    width: 33%;
+    text-align: center;
+}
+
+.Logo {
+    width: 33%;
+}
+
+.Logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.SecondNav {
+    width: 33%;
+    text-align: center;
+}
+/* .Navigation {
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +52,8 @@
     box-sizing: border-box;
     z-index: 90;
     background-color: gray;
+    top: 0;
+    left: 0;
 }
 
 .Navigation nav {
@@ -18,8 +61,8 @@
 }
 
 .Navigation li {
-    display: inline-block;
-    margin: 20px;
+    display: flex;
+    margin: 10px;
 }
 
 .Navigation a {
@@ -34,11 +77,11 @@
 }
 
 .Logo {
-    height: 4rem;
+    height: 5rem;  
 }
 
 @media (max-width: 499px) {
     .DesktopOnly {
         display: none
     }
-}
+} */
