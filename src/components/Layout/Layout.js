@@ -17,6 +17,7 @@ class Layout extends Component {
         // if mobile view
         showSideDrawer: false
     }
+    
     render() {
         return (
             <Aux>

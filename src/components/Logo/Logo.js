@@ -1,8 +1,11 @@
 import React from 'react';
-import logo from '../../assets/logo.gif';
+import logo from '../../assets/logoRevised.gif';
+import "./Logo.css";
 
 const bulkLogo = (props) => (
-    <img src={logo} alt="bulkLogo"/>
+    <div className="Logo">
+        <img src={logo} alt="bulkLogo"/>
+    </div>
 );
 
 export default bulkLogo;

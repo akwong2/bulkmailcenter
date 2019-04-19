@@ -1,87 +1,90 @@
+.Header {
+    display: grid;
+    margin: auto;
+    width: 1200px;
+    height: 100%;
+}
+
+.Main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Icon {
+    height: 120px;
+}
+
+.Control {
+    align-self: center;
+    justify-self: end;
+    grid-column: 3;
+}
+
 .Navigation {
     width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    height: 15%;
+}
+
+.Navigation ul{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 0;
+    background-color: #ddd;
+    margin: auto;
+}
+
+.Navigation li {
+    list-style: none;
+    border: 2px solid gray;
+    text-align: center;
+    align-self: center;
+    height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .Header {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .Navigation {
+        display: none;
+    }
+    
+}
+  
+
+/* .Header {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.Main {
+    display: flex;
+    position: relative;
+}
+
+.Icon {
+    height: 120px;
+    flex: 1;
+}
+
+.Control {
+    border: 2px solid blue;
+}
+
+.Navigation {
 }
 
 .Navigation ul {
-    padding-left: 0;
-    top: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+    background-color: #ddd;
 }
 
 .Navigation li {
-    display: inline;
-    padding: 5px;
-    list-style-type: none;
-    text-align: center;
-    font-size: 15px;
-}
-
-.FirstNav {
-    width: 33%;
-    text-align: center;
-}
-
-.Logo {
-    width: 33%;
-}
-
-.Logo img {
-    width: 100%;
-    height: 100%;
-}
-
-.SecondNav {
-    width: 33%;
-    text-align: center;
-}
-/* .Navigation {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    box-sizing: border-box;
-    z-index: 90;
-    background-color: gray;
-    top: 0;
-    left: 0;
-}
-
-.Navigation nav {
-    height: 100%;
-}
-
-.Navigation li {
-    display: flex;
-    margin: 10px;
-}
-
-.Navigation a {
-    text-decoration: none;
-    color: black;
-}
-
-.Navigation a:hover,
-.Navigation a:active,
-.Navigation a.active {
-    color: purple;
-}
-
-.Logo {
-    height: 5rem;  
-}
-
-@media (max-width: 499px) {
-    .DesktopOnly {
-        display: none
-    }
-} */
+    list-style: none;
+    padding: 15px 25px;
+}  */
