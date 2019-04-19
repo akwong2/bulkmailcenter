@@ -7,11 +7,13 @@
 
 .Main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .Icon {
     height: 120px;
+    grid-column: 2;
+    justify-self: center;
 }
 
 .Control {
@@ -50,41 +52,18 @@
     .Navigation {
         display: none;
     }
-    
-}
-  
 
-/* .Header {
-    display: flex;
-    flex-direction: column;
-}
+    .Control {
+        display: none;
+    }
 
-.Main {
-    display: flex;
-    position: relative;
+    .Header {
+        width: auto;
+    }
 }
 
-.Icon {
-    height: 120px;
-    flex: 1;
+@media (min-width: 768px) {
+    .MobileOnly {
+        display: none;
+    }
 }
-
-.Control {
-    border: 2px solid blue;
-}
-
-.Navigation {
-}
-
-.Navigation ul {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    margin: auto;
-    background-color: #ddd;
-}
-
-.Navigation li {
-    list-style: none;
-    padding: 15px 25px;
-}  */
