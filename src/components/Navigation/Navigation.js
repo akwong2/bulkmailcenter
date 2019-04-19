@@ -7,6 +7,8 @@ import ToggleIcon from '../ToggleIcon/ToggleIcon';
 class Navigation extends Component {
 
     render() {
+        console.log("hello Navigation")
+        console.log(this.props)
         let nav = <ul>
                     <li><NavLink to="/" exact>Home</NavLink></li>
                     <li><NavLink to="/mail">Mailing Services</NavLink></li>
@@ -22,7 +24,8 @@ class Navigation extends Component {
             <div className="Header">
                 <div className="Main">
                     <div className="MobileOnly">
-                        <ToggleIcon />
+                        <ToggleIcon 
+                            toggleClick={this.props.toggleClick} />
                     </div>
                     <div className="Icon">
                         <Logo />
