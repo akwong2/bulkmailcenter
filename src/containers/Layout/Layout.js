@@ -3,6 +3,7 @@ import Navigation from '../../components/Navigation/Navigation';
 import { Route } from 'react-router-dom';
 import Aux from '../../components/Aux';
 import './Layout.css';
+import SideDrawer from '../../components/SideDrawer/SideDrawer';
 
 function Index() {
     return <h2>Home</h2>
@@ -19,8 +20,13 @@ class Layout extends Component {
     }
 
     toggleIconHandler = () => {
-       console.log("hello")
-       alert("hello")
+       this.setState( (prevState) => {
+           return { showSideDrawer: !prevState.showSideDrawer}
+       })
+    }
+
+    sideDrawerClosedHandler = () => {
+        this.setState({ showSideDrawer: false})
     }
     
     render() {
@@ -28,6 +34,9 @@ class Layout extends Component {
             <Aux>
                 <Navigation 
                     toggleClick={this.toggleIconHandler} />
+                <SideDrawer 
+                    open={this.state.showSideDrawer} 
+                    closed={this.sideDrawerClosedHandler} />
                 <div className="Layout">
                     <Route path="/" exact component={Index} />
                     <Route path="/mail" exact component={Mail} />

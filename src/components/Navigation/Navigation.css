@@ -36,7 +36,7 @@
 
 .Navigation li {
     list-style: none;
-    border: 2px solid gray;
+    border: 1px solid gray;
     text-align: center;
     align-self: center;
     height: 100%;
@@ -59,6 +59,7 @@
 
     .Header {
         width: auto;
+        border-bottom: 1px solid gray;
     }
 }
 
