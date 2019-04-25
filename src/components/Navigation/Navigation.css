@@ -32,19 +32,44 @@
     padding: 0;
     background-color: #ddd;
     margin: auto;
+    height: 55px;
 }
 
 .Navigation li {
     list-style: none;
-    border: 1px solid gray;
     text-align: center;
     align-self: center;
     height: 100%;
+    line-height: 50px;
+}
+
+.Navigation li:nth-child(1) {
+    border-left: 1px solid rgb(108, 114, 122);
+}
+
+.Navigation li:nth-of-type(even) {
+    border-right: 1px solid rgb(108, 114, 122);
+}
+
+.Navigation li:nth-of-type(odd) {
+    border-right: 1px solid rgb(108, 114, 122);
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
     .Header {
         width: auto;
+    }
+
+    .Navigation ul {
+        height: auto;
+    }
+
+    .Navigation li {
+        line-height: normal;
+    }
+
+    .Navigation a {
+        height: 100%;
     }
 }
 
