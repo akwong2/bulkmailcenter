@@ -1,7 +1,7 @@
 .Header {
     display: grid;
     margin: auto;
-    width: 1200px;
+    width: 1000px;
     height: 100%;
 }
 
@@ -32,7 +32,6 @@
     padding: 0;
     background-color: #ddd;
     margin: auto;
-    height: 55px;
 }
 
 .Navigation li {
@@ -40,7 +39,6 @@
     text-align: center;
     align-self: center;
     height: 100%;
-    line-height: 50px;
 }
 
 .Navigation li:nth-child(1) {
@@ -55,7 +53,7 @@
     border-right: 1px solid rgb(108, 114, 122);
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1000px) {
     .Header {
         width: auto;
     }

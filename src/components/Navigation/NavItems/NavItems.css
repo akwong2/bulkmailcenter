@@ -1,7 +1,10 @@
 .NavItems a{
-    display: block;
+    display: grid;
     width: 100%;
     box-sizing: border-box;
+    height: 100%;
+    align-content: center;
+    text-decoration: none;
 }
 
 .NavItems a:hover,

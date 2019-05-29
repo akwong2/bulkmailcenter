@@ -4,10 +4,7 @@ import { Route } from 'react-router-dom';
 import Aux from '../../components/Aux';
 import './Layout.css';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
-
-function Index() {
-    return <h2>Home</h2>
-}
+import Home from '../../components/Home/home';
 
 function Mail() {
     return <h2>Mail</h2>
@@ -38,7 +35,7 @@ class Layout extends Component {
                     open={this.state.showSideDrawer} 
                     closed={this.sideDrawerClosedHandler} />
                 <div className="Layout">
-                    <Route path="/" exact component={Index} />
+                    <Route path="/" exact component={Home} />
                     <Route path="/mail" exact component={Mail} />
                 </div>
             </Aux>
