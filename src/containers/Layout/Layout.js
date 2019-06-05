@@ -5,10 +5,7 @@ import Aux from '../../components/Aux';
 import './Layout.css';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
 import Home from '../../components/Home/home';
-
-function Mail() {
-    return <h2>Mail</h2>
-}
+import MailingServices from '../../components/MailingServices/mailingServices';
 
 class Layout extends Component {
     state = {
@@ -36,7 +33,7 @@ class Layout extends Component {
                     closed={this.sideDrawerClosedHandler} />
                 <div className="Layout">
                     <Route path="/" exact component={Home} />
-                    <Route path="/mail" exact component={Mail} />
+                    <Route path="/mail" exact component={MailingServices} />
                 </div>
             </Aux>
         );

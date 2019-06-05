@@ -3,6 +3,7 @@ import React from 'react'
 const home = (props) => {
     return (
         <div>
+            <h2>Home</h2>
             <p>
                 With more than 25 years of experience in Direct Mailing Industry, our experienced
                 staff at City Print & Mail offers a complete solution with a full line of Direct
