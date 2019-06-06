@@ -5,7 +5,8 @@ import Aux from '../../components/Aux';
 import './Layout.css';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
 import Home from '../../components/Home/home';
-import MailingServices from '../../components/MailingServices/mailingServices';
+import MailingServices from '../../components/MailingServices/MailingServices';
+import DataProcessing from '../../components/DataProcessing/DataProcessing';
 
 class Layout extends Component {
     state = {
@@ -34,6 +35,7 @@ class Layout extends Component {
                 <div className="Layout">
                     <Route path="/" exact component={Home} />
                     <Route path="/mail" exact component={MailingServices} />
+                    <Route path="/data" exact component={DataProcessing}/>
                 </div>
             </Aux>
         );
