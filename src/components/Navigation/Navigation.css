@@ -41,18 +41,6 @@
     height: 100%;
 }
 
-.Navigation li:nth-child(1) {
-    border-left: 1px solid rgb(108, 114, 122);
-}
-
-.Navigation li:nth-of-type(even) {
-    border-right: 1px solid rgb(108, 114, 122);
-}
-
-.Navigation li:nth-of-type(odd) {
-    border-right: 1px solid rgb(108, 114, 122);
-}
-
 @media (min-width: 768px) and (max-width: 1000px) {
     .Header {
         width: auto;

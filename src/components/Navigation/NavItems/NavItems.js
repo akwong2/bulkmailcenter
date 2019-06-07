@@ -9,7 +9,7 @@ const navItems = (props) => {
                 <li><NavLink to="/" exact>Home</NavLink></li>
                 <li><NavLink to="/mail">Mailing Services</NavLink></li>
                 <li><NavLink to="/data">Data Processing</NavLink></li>
-                <li><NavLink to="/print">Duplication/ Printing</NavLink></li>
+                <li><NavLink to="/print">Printing</NavLink></li>
                 <li><NavLink to="/procurement">Procurement</NavLink></li>
                 <li><NavLink to="/testimonial">Testimonial</NavLink></li>
                 <li><NavLink to="/contact">Contact Us</NavLink></li>
