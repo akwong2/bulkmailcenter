@@ -3,7 +3,7 @@ import GoogleMapReact from 'google-map-react';
 import './Direction.css';
 import Hover from '../../components/Hover/Hover';
 
-const apiKey = "AIzaSyAcRoVO7plGNC7SPJ1svv2lYrkidStXVSA";
+const apiKey = "";
 
 class Direction extends Component {
 	state = {
