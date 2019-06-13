@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
-import './Direction.css';
 import Hover from '../../components/Hover/Hover';
 
-const apiKey = "AIzaSyAcRoVO7plGNC7SPJ1svv2lYrkidStXVSA";
+const apiKey = "";
 
 class Direction extends Component {
 	state = {
-		hover: false
+		hover: false,
+		balloon: false
 	}
 
 	static defaultProps = {
@@ -20,7 +20,7 @@ class Direction extends Component {
 
 
 	childClick = (props) => {
-		console.log("hello")
+		window.location.href = "https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.812943,-122.275446,16z?hl=en"
 	}
 
 	markerHover = (props) => {
@@ -47,6 +47,7 @@ class Direction extends Component {
 						lat={37.8129431}
 						lng={-122.2754464}
 						hover={this.state.hover}
+						balloon={this.state.balloon}
 					/>
         </GoogleMapReact>
       </div>
