@@ -9,6 +9,7 @@ import MailingServices from '../../components/MailingServices/MailingServices';
 import DataProcessing from '../../components/DataProcessing/DataProcessing';
 import DuplicationPrinting from '../../components/Printing/Printing';
 import Procurement from '../../components/Procurement/Procurement';
+import Direction from '../Direction/Direction';
 
 class Layout extends Component {
     state = {
@@ -40,6 +41,7 @@ class Layout extends Component {
                     <Route path="/data" exact component={DataProcessing} />
                     <Route path="/print" exact component={DuplicationPrinting} />
                     <Route path="/procurement" exact component={Procurement} />
+                    <Route path="/direction" exact component={Direction}/>
                 </div>
             </Aux>
         );
