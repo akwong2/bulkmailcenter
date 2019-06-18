@@ -20,7 +20,7 @@ class Direction extends Component {
 
 
 	childClick = (props) => {
-		window.location.href = "https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.812943,-122.275446,16z?hl=en"
+		window.location.href = "https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.8128413,-122.2799521,16z?hl=en"
 	}
 
 	markerHover = (props) => {
