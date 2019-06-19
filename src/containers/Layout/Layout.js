@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
 import { Route } from 'react-router-dom';
-import Aux from '../../components/Aux';
 import './Layout.css';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
 import Home from '../../components/Home/home';
@@ -11,6 +10,7 @@ import DuplicationPrinting from '../../components/Printing/Printing';
 import Procurement from '../../components/Procurement/Procurement';
 import Direction from '../Direction/Direction';
 import Testimonial from '../../components/Testimonial/Testimonial';
+import Contact from '../../components/Contact/Contact';
 
 class Layout extends Component {
     state = {
@@ -30,7 +30,7 @@ class Layout extends Component {
     
     render() {
         return (
-            <Aux>
+            <div className={"Background"}>
                 <Navigation 
                     toggleClick={this.toggleIconHandler} />
                 <SideDrawer 
@@ -43,9 +43,10 @@ class Layout extends Component {
                     <Route path="/print" exact component={DuplicationPrinting} />
                     <Route path="/procurement" exact component={Procurement} />
                     <Route path="/testimonial" exact component={Testimonial} />
+                    <Route path="/contact" exact component={Contact} />
                     <Route path="/direction" exact component={Direction}/>
                 </div>
-            </Aux>
+            </div>
         );
     }
 }

@@ -2,11 +2,13 @@
     display: grid;
     margin: auto;
     width: 1000px;
-    height: 100%;
 }
 
 @media (max-width: 1000px) {
     .Layout {
         width: auto;
     }
+}
+
+.Background {
 }
