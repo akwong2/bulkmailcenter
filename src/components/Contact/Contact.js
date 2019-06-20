@@ -1,30 +1,33 @@
 import React, { Component } from 'react';
-const sgMail = require('@sendgrid/mail');
+import axios from 'axios'
 
 class Contact extends Component {
 
     submitForm = (event) => {
-        console.log("submitted!")
-        
-        sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-        const msg = {
-            to: 'test@example.com',
-            from: 'test@example.com',
-            subject: 'Sending with Twilio SendGrid is Fun',
-            text: 'and easy to do anywhere, even with Node.js',
-            html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-        };
-        sgMail.send(msg);
         event.preventDefault();
+        const contact = {
+            firstName: "DEEDEE",
+            lastName: "Kwong"
+        }
+        console.log(contact)
+        // axios.post(`http://${window.location.hostname}:5000/submitContact`, contact)
+        //     .then(res => console.log(res))
+        //     .catch(err => console.log(err))
     }
 
     render() {
         return (
             <div>
-                <h2>Contact</h2>
+                <h2>Contact Us</h2>
+                <p>
+                    Please complete this form to get more information about our company, 
+                    products, or services. Comments and suggestions are always welcome.
+                </p>
                 <form onSubmit={this.submitForm}>
                     <label>Name: </label>
                     <input />
+                    <label>Email Address: </label>
+                    <label>Phone Number: </label>
                     <button>Submit</button>
                 </form>
             </div>

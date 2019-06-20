@@ -4,6 +4,11 @@
   "private": true,
   "dependencies": {
     "@sendgrid/mail": "^6.4.0",
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "google-map-react": "^1.1.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -14,7 +19,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "startServer": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"npm start\" \"npm run server\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -24,5 +32,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
 }
