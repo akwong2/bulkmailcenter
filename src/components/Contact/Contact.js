@@ -10,9 +10,9 @@ class Contact extends Component {
             lastName: "Kwong"
         }
         console.log(contact)
-        // axios.post(`http://${window.location.hostname}:5000/submitContact`, contact)
-        //     .then(res => console.log(res))
-        //     .catch(err => console.log(err))
+        axios.post(`http://${window.location.hostname}:5000/submitContact`, contact)
+            .then(res => console.log(res))
+            .catch(err => console.log(err))
     }
 
     render() {
