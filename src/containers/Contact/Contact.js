@@ -57,19 +57,32 @@ class Contact extends Component {
                 <form onSubmit={this.submitForm}>
                     <label>Name: </label>
                     <br/>
-                    <input required name="name" value={name} onChange={this.handleChange}/> 
+                    <input required 
+                        name="name" 
+                        value={name} 
+                        onChange={this.handleChange}/> 
                     <br/>
                     <label>Email Address: </label>
                     <br/>
-                    <input required name="email" value={email} onChange={this.handleChange}/>
+                    <input required 
+                        name="email" 
+                        value={email} 
+                        onChange={this.handleChange} 
+                        type="email"/>
                     <br/>
                     <label>Phone Number: </label>
                     <br/>
-                    <input name="phone" value={phone} onChange={this.handleChange}/>
+                    <input 
+                        name="phone" 
+                        value={phone} 
+                        onChange={this.handleChange}/>
                     <br/>
                     <label>Comments: </label>
                     <br/>
-                    <textarea name="comment" value={comment} onChange={this.handleChange}/>
+                    <textarea rows="10" cols="50" 
+                        name="comment" 
+                        value={comment} 
+                        onChange={this.handleChange}/>
                     <br/>
                     <button onClick={this.resetForm}>Reset</button>
                     <button>Send</button>

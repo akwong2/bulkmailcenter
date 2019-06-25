@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
 import { Route } from 'react-router-dom';
-import './Layout.css';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
 import Home from '../../components/Home/home';
 import MailingServices from '../../components/MailingServices/MailingServices';
@@ -10,7 +9,8 @@ import DuplicationPrinting from '../../components/Printing/Printing';
 import Procurement from '../../components/Procurement/Procurement';
 import Direction from '../Direction/Direction';
 import Testimonial from '../../components/Testimonial/Testimonial';
-import Contact from '../../components/Contact/Contact';
+import Contact from '../Contact/Contact';
+import './Layout.css';
 
 class Layout extends Component {
     state = {
