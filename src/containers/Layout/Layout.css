@@ -1,7 +1,15 @@
 .Layout {
-    display: grid;
     margin: auto;
     width: 1000px;
+    overflow: auto;
+    height: 75%;
+    padding-top: 5px;
+    /* Border Radius */
+    /* border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    border: 2px solid gray; */
+    margin-top: 20px;
 }
 
 @media (max-width: 1000px) {
@@ -11,4 +19,5 @@
 }
 
 .Background {
+    height: 100%;
 }
