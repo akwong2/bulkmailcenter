@@ -5,14 +5,17 @@
     height: 35px;
     align-content: center;
     text-decoration: none;
+    color: white;
 }
 
 .NavItems a:hover,
 .NavItems a:active,
 .NavItems a.active {
-    color: rgb(42, 73, 152);
+    color: black;
+    border-bottom: 3px solid black;
+    /* color: rgb(42, 73, 152);
     background-color: #c6c6c6;
-    border-bottom: 3px solid rgb(108, 114, 122);
+    border-bottom: 3px solid rgb(108, 114, 122); */
 }
 
 @media (max-width: 768px) {
