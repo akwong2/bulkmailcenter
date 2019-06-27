@@ -70,11 +70,11 @@
 
     .Header {
         width: auto;
-        /* border-bottom: 1px solid gray; */
+        border-bottom: 2px solid rgb(43, 68, 149);
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .MobileOnly {
         display: none;
     }

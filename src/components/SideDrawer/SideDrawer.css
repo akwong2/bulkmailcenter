@@ -6,7 +6,7 @@
     left: 0;
     top: 0;
     z-index: 200;
-    background-color: #ddd;
+    background-color: rgb(43, 68, 149);
     padding: 32px 16px;
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
@@ -14,7 +14,7 @@
 
 .SideDrawer ul {
     padding: 0;
-    background-color: #ddd;
+    background-color: rgb(43, 68, 149);
     margin: auto;
 }
 

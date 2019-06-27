@@ -32,7 +32,7 @@ class Direction extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div style={{ height: '50vh', width: '95%' }}>
+      <div style={{ height: '45vh', width: '95%' }}>
         <h2>Directions</h2>
         <p>777 W Grand Avenue</p>
         <GoogleMapReact
