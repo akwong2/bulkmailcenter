@@ -32,6 +32,10 @@
         height: 60%;
         border: none;
     }
+
+    .Layout > div {
+        padding-left: 10px;
+    }
 }
 
 .Background {
