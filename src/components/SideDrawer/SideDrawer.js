@@ -5,18 +5,19 @@ import NavItems from '../Navigation/NavItems/NavItems';
 import BackDrop from '../BackDrop/BackDrop';
 
 const sideDrawer = (props) => {
-    let attatchedClasses = ["SideDrawer, Close"]
+    let attatchedClasses = 'SideDrawer'
     if (props.open) {
-        attatchedClasses = ["SideDrawer", "Open"]
+        attatchedClasses = 'SideDrawer Open'
     }
-
     return (
         <Aux>
             <BackDrop 
                 show={props.open}
                 clicked={props.closed} />
-            <div className={attatchedClasses.join(' ')}>
+            <div className={attatchedClasses}>
                 <NavItems />
+                <div className="SideFooter">
+                </div>
             </div>
         </Aux>
     )

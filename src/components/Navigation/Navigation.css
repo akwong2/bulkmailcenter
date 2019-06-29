@@ -1,24 +1,112 @@
 .Header {
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 375px auto 50px;
+    border-bottom: 2px solid #ccc;
+    /* background-color: black; */
+}
+
+.Main {
+    /* border: 2px solid green; */
+    grid-column: 1;
+}
+
+.MobileOnly {
+    /* border: 2px solid pink; */
+}
+
+.Icon {
+    /* border: 2px solid red; */
+}
+
+.Navigation {
+    /* border: 2px solid yellow; */
+    grid-column: 2;
+    margin: auto 0;
+}
+
+.Navigation ul {
+    display: grid;
+    text-align: right;
+    grid-template-columns: repeat(5, 1fr);
+    float: right;
+    /* border: 2px solid gray; */
+    padding: 0;
+    height: 100%;
+}
+
+.Navigation li {
+    list-style: none;
+    text-align: center;
+    align-self: center;
+    height: 100%;
+    /* border: 2px solid purple; */
+    padding: 0 5px;
+}
+
+.Control {
+    /* border: 2px solid blue; */
+    grid-column: 3;
+}
+
+@media (min-width: 1000px) {
+    .MobileOnly {
+        display: none;
+    }
+} 
+
+@media (max-width: 999px) {
+    .Navigation {
+        display: none;
+    }
+
+    .Control {
+        display: none;
+    }
+
+    .Header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Main {
+        grid-template-columns: auto 350px auto;
+        display: grid;
+    }
+
+    .MobileOnly {
+        grid: 1;
+    }
+
+    .Icon {
+        grid: 2;
+    }
+}
+
+/* .Header {
     display: grid;
     margin: auto;
     width: 1000px;
+    border: 2px solid gray;
 }
 
 .Main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    border: 2px solid black;
 }
 
 .Icon {
     height: 150px;
     grid-column: 2;
     justify-self: center;
+    border: 2px solid red;
 }
 
 .Control {
     align-self: center;
     justify-self: end;
     grid-column: 3;
+    border: 2px solid blue;
 }
 
 .Navigation {
@@ -29,7 +117,6 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     padding: 0;
-    /* background-color: #ddd; */
     background-color: rgb(36, 111, 180);
     margin: auto;
 }
@@ -39,9 +126,9 @@
     text-align: center;
     align-self: center;
     height: 100%;
-}
+} */
 
-@media (min-width: 768px) and (max-width: 1000px) {
+/* @media (min-width: 768px) and (max-width: 1000px) {
     .Header {
         width: auto;
     }
@@ -57,9 +144,22 @@
     .Navigation a {
         height: 100%;
     }
-}
+} */
+/* 
+    .Header {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-@media (max-width: 768px) {
+    .MobileOnly {
+        grid-column: 1;
+    }
+
+    .Icon {
+        grid-column: 2;
+    } */
+
+
+/* @media (max-width: 768px) {
     .Navigation {
         display: none;
     }
@@ -78,4 +178,4 @@
     .MobileOnly {
         display: none;
     }
-}
+} */

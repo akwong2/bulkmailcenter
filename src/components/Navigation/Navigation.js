@@ -17,12 +17,12 @@ class Navigation extends Component {
                     <div className="Icon">
                         <Logo />
                     </div>
-                    <div className="Control">
-                    </div>
                 </div>
                 <div className="Navigation">
                     <NavItems />
                 </div>
+                <div className="Control">
+                    </div>
             </div>
         );
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/logoRevised.gif';
+import logo from '../../assets/logo.gif';
 import "./Logo.css";
 
 const bulkLogo = (props) => (
