@@ -17,6 +17,10 @@
     overflow-x: hidden;
 }
 
+.Layout > div > h2 {
+    text-align: center;
+}
+
 .Footer {
     background-color: #171717;
     position: fixed;
