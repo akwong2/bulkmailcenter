@@ -60,7 +60,7 @@
     }
 
     .Layout > div {
-        padding-left: 10px;
+        padding: 0 10px;
     }
 
     .Footer {

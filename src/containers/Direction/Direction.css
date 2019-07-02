@@ -1,2 +1,13 @@
-.Direction {
+/* .Direction {
+    display: grid;
+    border: 2px solid black;
+    grid-template-columns: 1fr 2fr;
 }
+
+.Location {
+    grid-column: 1;
+}
+
+.Map {
+    grid-column: 2;
+} */
