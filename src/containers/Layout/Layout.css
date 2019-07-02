@@ -2,39 +2,69 @@
     margin: auto;
     width: 1000px;
     overflow-y: auto;
-    height: 75%;
-    padding-top: 5px;
+    height: 70%;
+    /* z-index: 5; */
+    position: relative;
+    /* padding-top: 5px; */
     /* Border Radius */
-    border-radius: 10px 10px 10px 10px;
+    /* border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 1.5px solid rgb(107, 81, 158);
+    -webkit-border-radius: 10px 10px 10px 10px; */
+    /* border: 1.5px solid rgb(107, 81, 158); */
     /* border: 2px solid black; */
-    margin-top: 1em;
+    /* margin-top: 1em; */
     background-color: white;
     overflow-x: hidden;
 }
 
-@media (max-height: 700px) {
-    .Layout {
-        height: 65%;
-    }
+.Footer {
+    background-color: #171717;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    height: 15%;
+    text-align: center;
 }
 
-.Layout > div {
-    padding: 0 20px;
+.Footer > div {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.Background > img {
+    width: 100%;
+    object-fit: cover;
+    height: 45%;
+}
+
+/* @media (max-height: 700px) {
+    .Layout {
+        height: 75%;
+    }
+} */
+
+/* .Layout > div {
+    padding: 0 20px;
+} */
 
 @media (max-width: 1000px) {
     .Layout {
         width: auto;
         -webkit-overflow-scrolling: touch;
-        height: 60%;
+        height: 70%;
         border: none;
     }
 
     .Layout > div {
         padding-left: 10px;
+    }
+
+    .Footer {
+        display: none;
     }
 }
 

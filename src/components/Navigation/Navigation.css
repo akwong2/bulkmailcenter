@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 375px auto 50px;
     border-bottom: 2px solid #ccc;
-    /* background-color: black; */
+    background-color: white;
 }
 
 .Main {

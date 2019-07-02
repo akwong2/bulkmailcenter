@@ -11,6 +11,7 @@ import Direction from '../Direction/Direction';
 import Testimonial from '../../components/Testimonial/Testimonial';
 import Contact from '../Contact/Contact';
 import './Layout.css';
+// import sf from '../../assets/sf.jpg';
 
 class Layout extends Component {
     state = {
@@ -36,6 +37,7 @@ class Layout extends Component {
                 <SideDrawer 
                     open={this.state.showSideDrawer} 
                     closed={this.sideDrawerClosedHandler} />
+                {/* <img src={sf} alt="sfPic" /> */}
                 <div className="Layout">
                     <Route path="/" exact component={Home} />
                     <Route path="/mail" exact component={MailingServices} />
@@ -45,6 +47,12 @@ class Layout extends Component {
                     <Route path="/testimonial" exact component={Testimonial} />
                     <Route path="/contact" exact component={Contact} />
                     <Route path="/direction" exact component={Direction}/>
+                </div>
+                <div className="Footer">
+                    <div>
+                        <div>510-835-8117</div>
+                        <div>777 W Grand Ave, Oakland</div>
+                    </div>
                 </div>
             </div>
         );

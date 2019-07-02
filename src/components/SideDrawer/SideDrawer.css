@@ -37,6 +37,13 @@
     color: white;
 }
 
+.SideFooter > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 @media (min-width: 1000px) {
     .SideDrawer {
         display: none;

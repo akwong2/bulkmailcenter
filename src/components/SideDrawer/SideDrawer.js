@@ -17,6 +17,11 @@ const sideDrawer = (props) => {
             <div className={attatchedClasses}>
                 <NavItems />
                 <div className="SideFooter">
+                    <div>
+                        <div>(510) 835-8117</div>
+                        <div>777 W Grand Ave, Oakland</div>
+                    </div>
+                    
                 </div>
             </div>
         </Aux>
