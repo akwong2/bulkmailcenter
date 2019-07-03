@@ -1,3 +1,38 @@
+.Contact {
+    padding: 1rem;
+}
+
+label {
+    display: block;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+}
+
+button {
+    border: 0;
+    padding: 0.5rem;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #171717;
+}
+
+.Send {
+    margin: 1rem 1rem 1rem 0;
+}
+
+.Send:hover {
+    color: green;
+}
+
+.Reset:hover {
+    color: red;
+}
+
 .Success {
     color: green;
 }

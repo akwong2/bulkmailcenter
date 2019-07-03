@@ -49,44 +49,38 @@ class Contact extends Component {
         return (
             <div>
                 <h2>Contact Us</h2>
-                <p>
-                    Please complete this form to get more information about our company, 
-                    products, or services. Comments and suggestions are always welcome.
-                </p>
-                <p className={this.state.success ? "Success" : "Error"}>{message}</p>
-                <form onSubmit={this.submitForm}>
-                    <label>Name: </label>
-                    <br/>
-                    <input required 
-                        name="name" 
-                        value={name} 
-                        onChange={this.handleChange}/> 
-                    <br/>
-                    <label>Email Address: </label>
-                    <br/>
-                    <input required 
-                        name="email" 
-                        value={email} 
-                        onChange={this.handleChange} 
-                        type="email"/>
-                    <br/>
-                    <label>Phone Number: </label>
-                    <br/>
-                    <input 
-                        name="phone" 
-                        value={phone} 
-                        onChange={this.handleChange}/>
-                    <br/>
-                    <label>Comments: </label>
-                    <br/>
-                    <textarea rows="10" cols="50" 
-                        name="comment" 
-                        value={comment} 
-                        onChange={this.handleChange}/>
-                    <br/>
-                    <button onClick={this.resetForm}>Reset</button>
-                    <button>Send</button>
-                </form>
+                <div className="Contact">        
+                    <p>
+                        Please complete this form to get more information about our company, 
+                        products, or services. Comments and suggestions are always welcome.
+                    </p>
+                    <p className={this.state.success ? "Success" : "Error"}>{message}</p>
+                    <form onSubmit={this.submitForm}>
+                        <label>Name</label>
+                        <input required 
+                            name="name" 
+                            value={name} 
+                            onChange={this.handleChange}/> 
+                        <label>Email Address</label>
+                        <input required 
+                            name="email" 
+                            value={email} 
+                            onChange={this.handleChange} 
+                            type="email"/>
+                        <label>Phone Number</label>
+                        <input 
+                            name="phone" 
+                            value={phone} 
+                            onChange={this.handleChange}/>
+                        <label>Comments</label>
+                        <textarea rows="10" cols="50" 
+                            name="comment" 
+                            value={comment} 
+                            onChange={this.handleChange}/>
+                        <button className="Send">Send</button>
+                        <button className="Reset" onClick={this.resetForm}>Reset</button>
+                    </form>
+                </div>
             </div>
         )
     }

@@ -1,20 +1,14 @@
 .Layout {
+    display: grid;
+    grid-row: 2;
+    /* grid-template-rows: 1fr auto; */
     margin: auto;
     width: 1000px;
     overflow-y: auto;
-    height: 70%;
-    /* z-index: 5; */
-    position: relative;
-    /* padding-top: 5px; */
-    /* Border Radius */
-    /* border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px; */
-    /* border: 1.5px solid rgb(107, 81, 158); */
+    min-height: 70%;
     /* border: 2px solid black; */
-    /* margin-top: 1em; */
     background-color: white;
-    overflow-x: hidden;
+
 }
 
 .Layout > div > h2 {
@@ -22,14 +16,14 @@
 }
 
 .Footer {
+    /* grid-row-start: 2;
+    grid-row-end: 3; */
     background-color: #171717;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
     color: white;
-    height: 15%;
+    height: 25%;
     text-align: center;
+    position: relative;
 }
 
 .Footer > div {
@@ -37,6 +31,9 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* height: 15%; */
+    /* width: 1000px; */
+    /* margin: auto; */
 }
 
 .Background > img {

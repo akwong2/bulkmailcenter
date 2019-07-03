@@ -32,11 +32,13 @@ class Layout extends Component {
     render() {
         return (
             <div className={"Background"}>
-                <Navigation 
-                    toggleClick={this.toggleIconHandler} />
-                <SideDrawer 
-                    open={this.state.showSideDrawer} 
-                    closed={this.sideDrawerClosedHandler} />
+                <div>
+                    <Navigation 
+                        toggleClick={this.toggleIconHandler} />
+                    <SideDrawer 
+                        open={this.state.showSideDrawer} 
+                        closed={this.sideDrawerClosedHandler} />
+                </div>
                 {/* <img src={sf} alt="sfPic" /> */}
                 <div className="Layout">
                     <Route path="/" exact component={Home} />
