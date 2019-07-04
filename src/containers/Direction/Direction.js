@@ -32,25 +32,29 @@ class Direction extends Component {
 
   render() {
     return (
-      // Important! Always set the container height explicitly
-      <div className="Direction" style={{ height: '45vh', width: '95%' }}>
-        <h2>Directions</h2>
-        <p>777 W Grand Avenue</p>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: apiKey}}
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-          onChildClick={this.childClick}
-					onChildMouseEnter={this.markerHover}
-					onChildMouseLeave={this.markerHover}
-        >
-					<Hover 
-						lat={37.8129431}
-						lng={-122.2754464}
-						hover={this.state.hover}
-						balloon={this.state.balloon}
-					/>
-        </GoogleMapReact>
+			// Important! Always set the container height explicitly
+			<div>
+				<h2>Directions</h2>
+			
+				<div className="Direction" >
+					
+					<p>777 W Grand Avenue, Oakland, CA</p>
+					<GoogleMapReact
+						bootstrapURLKeys={{ key: apiKey}}
+						defaultCenter={this.props.center}
+						defaultZoom={this.props.zoom}
+						onChildClick={this.childClick}
+						onChildMouseEnter={this.markerHover}
+						onChildMouseLeave={this.markerHover}
+					>
+						<Hover 
+							lat={37.8129431}
+							lng={-122.2754464}
+							hover={this.state.hover}
+							balloon={this.state.balloon}
+						/>
+					</GoogleMapReact>
+				</div>
       </div>
     );
   }

@@ -1,13 +1,9 @@
-/* .Direction {
-    display: grid;
-    border: 2px solid black;
-    grid-template-columns: 1fr 2fr;
+.Direction{
+    height: 45vh;
+    width: 95%;
+    margin: auto;
 }
 
-.Location {
-    grid-column: 1;
+.Direction > p {
+    text-align: center;
 }
-
-.Map {
-    grid-column: 2;
-} */

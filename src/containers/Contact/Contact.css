@@ -1,5 +1,5 @@
 .Contact {
-    padding: 1rem;
+    padding: 0 20px;
 }
 
 label {
@@ -8,7 +8,7 @@ label {
 
 input, textarea {
     display: block;
-    width: 100%;
+    width: 50%;
 }
 
 button {
@@ -26,11 +26,11 @@ button {
 }
 
 .Send:hover {
-    color: green;
+    color: rgb(107, 81, 158);
 }
 
 .Reset:hover {
-    color: red;
+    color: rgb(107, 81, 158);
 }
 
 .Success {
