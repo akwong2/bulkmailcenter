@@ -37,8 +37,6 @@ class Direction extends Component {
 				<h2>Directions</h2>
 			
 				<div className="Direction" >
-					
-					<p>777 W Grand Avenue, Oakland, CA</p>
 					<GoogleMapReact
 						bootstrapURLKeys={{ key: apiKey}}
 						defaultCenter={this.props.center}
@@ -54,6 +52,11 @@ class Direction extends Component {
 							balloon={this.state.balloon}
 						/>
 					</GoogleMapReact>
+					<p>
+						<a href="https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.8128413,-122.2799521,16z?hl=en">
+							777 W Grand Ave, Oakland, CA 94612
+						</a>
+                    </p>
 				</div>
       </div>
     );

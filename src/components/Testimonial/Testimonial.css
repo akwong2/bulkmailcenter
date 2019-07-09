@@ -1,23 +1,33 @@
 .Testimonial {
+    width: 100%;
+}
+
+.Testimonial > img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.TestimonialContent {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2em;
-    padding: 0 20px;
+    padding: 40px 20px;
 }
 
 @media (max-width: 999px) {
-    .Testimonial {
+    .TestimonialContent {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media (max-width: 768px) {
-    .Testimonial {
+    .TestimonialContent {
         grid-template-columns: 1fr;
     }
 }
 
-.Testimonial > p {
+.TestimonialContent > p {
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px; 
