@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Hover from '../../components/Hover/Hover';
+// import axios from 'axios';
 import './Direction.css';
+require('dotenv').config();
 
-const apiKey = "";
+
 
 class Direction extends Component {
 	state = {
@@ -18,7 +20,6 @@ class Direction extends Component {
 		},
 		zoom: 16
 	};
-
 
 	childClick = (props) => {
 		window.location.href = "https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.8128413,-122.2799521,16z?hl=en"
@@ -38,7 +39,7 @@ class Direction extends Component {
 			
 				<div className="Direction" >
 					<GoogleMapReact
-						bootstrapURLKeys={{ key: apiKey}}
+						bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API}}
 						defaultCenter={this.props.center}
 						defaultZoom={this.props.zoom}
 						onChildClick={this.childClick}
