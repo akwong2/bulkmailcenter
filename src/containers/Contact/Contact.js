@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Contact.css';
+import contact from '../../assets/contact.jpg';
 
 class Contact extends Component {
     constructor(props) {
@@ -49,37 +50,40 @@ class Contact extends Component {
         return (
             <div>
                 <h2>Contact Us</h2>
-                <div className="Contact">        
-                    <p>
-                        Please complete this form to get more information about our company, 
-                        products, or services. Comments and suggestions are always welcome.
-                    </p>
-                    <p className={this.state.success ? "Success" : "Error"}>{message}</p>
-                    <form onSubmit={this.submitForm}>
-                        <label>Name</label>
-                        <input required 
-                            name="name" 
-                            value={name} 
-                            onChange={this.handleChange}/> 
-                        <label>Email Address</label>
-                        <input required 
-                            name="email" 
-                            value={email} 
-                            onChange={this.handleChange} 
-                            type="email"/>
-                        <label>Phone Number</label>
-                        <input 
-                            name="phone" 
-                            value={phone} 
-                            onChange={this.handleChange}/>
-                        <label>Comments</label>
-                        <textarea rows="10" cols="50" 
-                            name="comment" 
-                            value={comment} 
-                            onChange={this.handleChange}/>
-                        <button className="Send">Send</button>
-                        <button className="Reset" onClick={this.resetForm}>Reset</button>
-                    </form>
+                <div className="Contact">  
+                    <img src={contact} alt="contactPic" />
+                    <div className="ContactContent">
+                        <p>
+                            Please complete this form to get more information about our company, 
+                            products, or services. Comments and suggestions are always welcome.
+                        </p>
+                        <p className={this.state.success ? "Success" : "Error"}>{message}</p>
+                        <form onSubmit={this.submitForm}>
+                            <label>Name</label>
+                            <input required 
+                                name="name" 
+                                value={name} 
+                                onChange={this.handleChange}/> 
+                            <label>Email Address</label>
+                            <input required 
+                                name="email" 
+                                value={email} 
+                                onChange={this.handleChange} 
+                                type="email"/>
+                            <label>Phone Number</label>
+                            <input 
+                                name="phone" 
+                                value={phone} 
+                                onChange={this.handleChange}/>
+                            <label>Comments</label>
+                            <textarea rows="10" cols="50" 
+                                name="comment" 
+                                value={comment} 
+                                onChange={this.handleChange}/>
+                            <button className="Send">Send</button>
+                            <button className="Reset" onClick={this.resetForm}>Reset</button>
+                        </form>
+                    </div>  
                 </div>
             </div>
         )

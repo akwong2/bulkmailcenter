@@ -32,9 +32,31 @@
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-areas:    "phone fax"
+                            "email email"
+                            "address address";
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
     /* height: 15%; */
     /* width: 1000px; */
     /* margin: auto; */
+}
+
+.Phone {
+    grid-area: phone;
+}
+
+.Fax {
+    grid-area: fax;
+}
+
+.Email {
+    grid-area: email
+}
+
+.Address {
+    grid-area: address;
 }
 
 .Background > img {

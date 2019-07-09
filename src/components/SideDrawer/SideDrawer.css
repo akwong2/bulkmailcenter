@@ -31,7 +31,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(107, 81, 158);
+    background-color: #171717;
     height: 15%;
     text-align: center;
     color: white;
@@ -39,10 +39,35 @@
 
 .SideFooter > div {
     position: absolute;
+    font-size: 11px;
+    width: 95%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-areas:    "phone fax"
+                            "email email"
+                            "address address";
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
 }
+
+.Phone {
+    grid-area: phone;
+}
+
+.Fax {
+    grid-area: fax;
+}
+
+.Email {
+    grid-area: email
+}
+
+.Address {
+    grid-area: address;
+}
+
 
 @media (min-width: 1000px) {
     .SideDrawer {

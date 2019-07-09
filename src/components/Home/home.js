@@ -10,7 +10,7 @@ const home = (props) => {
             <h2>Home</h2>
        
             <div className="Home">
-                <img src={think} alt="sfPic" />
+                <img src={think} alt="homePic" />
                 
                 <div className="Content">
                     <p>
