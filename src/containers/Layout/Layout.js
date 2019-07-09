@@ -10,6 +10,7 @@ import Procurement from '../../components/Procurement/Procurement';
 import Direction from '../Direction/Direction';
 import Testimonial from '../../components/Testimonial/Testimonial';
 import Contact from '../Contact/Contact';
+import Footer from '../../components/Footer/Footer.js'
 import './Layout.css';
 
 class Layout extends Component {
@@ -30,8 +31,8 @@ class Layout extends Component {
     
     render() {
         return (
-            <div className={"Background"}>
-                <div>
+            <div className="Background">
+                <div className="Bar">
                     <Navigation 
                         toggleClick={this.toggleIconHandler} />
                     <SideDrawer 
@@ -49,21 +50,7 @@ class Layout extends Component {
                     <Route path="/direction" exact component={Direction}/>
                 </div>
                 <div className="Footer">
-                    <div>
-                        <div className="Phone">Phone: 
-                            <a href="tel:510-835-8117"> (510) 835-8117</a>
-                        </div>
-                        <div className="Fax">Fax: (510) 835-1720</div>
-                        <div className="Address">
-                            <a href="https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.8128413,-122.2799521,16z?hl=en">
-                                777 W Grand Ave, Oakland, CA 94612
-                            </a>
-                        </div>
-                        {/* "https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.8128413,-122.2799521,16z?hl=en" */}
-                        <div className="Email">
-                            <a href="mailto:info@bulkmailcenter.com">info@bulkmailcenter.com</a>
-                        </div>    
-                    </div>
+                    <Footer />
                 </div>
             </div>
         );

@@ -10,12 +10,20 @@
 
 .TestimonialContent {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 500px;
+    margin: auto;
     grid-gap: 2em;
     padding: 40px 20px;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 600px) {
+    .TestimonialContent {
+        width: auto;
+    }
+}
+
+/* @media (max-width: 999px) {
     .TestimonialContent {
         grid-template-columns: 1fr 1fr;
     }
@@ -25,7 +33,7 @@
     .TestimonialContent {
         grid-template-columns: 1fr;
     }
-}
+} */
 
 .TestimonialContent > p {
     border-radius: 10px 10px 10px 10px;

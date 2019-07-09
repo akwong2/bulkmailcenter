@@ -10,6 +10,13 @@
     background-color: white;
     padding-bottom: 100px;
     overflow-x: hidden;
+    padding-top: 7em;
+}
+
+.Bar {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
 }
 
 .Layout > div > h2 {
