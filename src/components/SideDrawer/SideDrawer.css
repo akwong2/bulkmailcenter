@@ -52,6 +52,11 @@
     grid-row-gap: 5px;
 }
 
+.SideFooter a {
+    color: white;
+    text-decoration: none;
+}
+
 .Phone {
     grid-area: phone;
 }

@@ -65,6 +65,11 @@
     height: 45%;
 }
 
+.Footer a {
+    color: white;
+    text-decoration: none;
+}
+
 /* @media (max-height: 700px) {
     .Layout {
         height: 75%;
