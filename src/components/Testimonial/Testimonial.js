@@ -1,4 +1,4 @@
-import React from 'react';
+import React from './node_modules/react';
 import './Testimonial.css';
 import handshake from '../../assets/handshake.jpg';
 

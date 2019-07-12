@@ -1,4 +1,4 @@
-import React from 'react'
+import React from './node_modules/react'
 // import sf from '../../assets/sf.jpg';
 // import write from '../../assets/write.jpg';
 import think from '../../assets/think.jpg';

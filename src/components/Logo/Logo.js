@@ -1,4 +1,4 @@
-import React from 'react';
+import React from './node_modules/react';
 import logo from '../../assets/logo.gif';
 import "./Logo.css";
 

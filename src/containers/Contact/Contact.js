@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 // import axios from 'axios';
 import './Contact.css';
 import contact from '../../assets/contact.jpg';
