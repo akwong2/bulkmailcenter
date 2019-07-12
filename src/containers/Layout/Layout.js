@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navigation from '../../Components/Navigation/Navigation.js';
-import { Route } from './node_modules/react-router-dom';
+import { Route } from 'react-router-dom';
 import SideDrawer from '../../Components/SideDrawer/SideDrawer.js';
 import Home from '../../Components/Home/home.js';
 import MailingServices from '../../Components/MailingServices/MailingServices.js';
