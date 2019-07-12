@@ -1,4 +1,4 @@
-import React, { Component } from './node_modules/react';
+import React, { Component } from 'react';
 import Logo from '../Logo/Logo';
 import './Navigation.css';
 import ToggleIcon from '../ToggleIcon/ToggleIcon';

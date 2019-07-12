@@ -1,4 +1,4 @@
-import React from './node_modules/react';
+import React from 'react';
 import Aux from '../Aux';
 import NavItems from '../Navigation/NavItems/NavItems';
 import BackDrop from '../BackDrop/BackDrop';
