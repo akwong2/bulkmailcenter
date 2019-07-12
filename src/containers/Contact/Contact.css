@@ -1,22 +1,22 @@
 .Contact {
-    width: 100%;
+  width: 100%;
 }
 
 .Contact > img {
-    width: 100%;
-    object-fit: cover;
-    height: 300px;
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
 }
 
 .ContactContent {
-    width: 500px;
-    margin: auto;
+  width: 500px;
+  margin: auto;
 }
 
 @media (max-width: 540px) {
-    .ContactContent {
-        width: auto;
-    } 
+  .ContactContent {
+    width: auto;
+  } 
 }
 
 /* 
@@ -27,46 +27,46 @@ padding: 0 20px;
 */
 
 label {
-    display: block;
+  display: block;
 }
 
 input, textarea {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 button {
-    border: 0;
-    padding: 0.5rem;
-    width: auto;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: white;
-    background-color: #171717;
+  border: 0;
+  padding: 0.5rem;
+  width: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #171717;
 }
 
 .Send {
-    margin: 1rem 1rem 1rem 0;
+  margin: 1rem 1rem 1rem 0;
 }
 
 .Send:hover {
-    color: rgb(107, 81, 158);
+  color: rgb(107, 81, 158);
 }
 
 .Reset:hover {
-    color: rgb(107, 81, 158);
+  color: rgb(107, 81, 158);
 }
 
 .Success {
-    color: green;
+  color: green;
 }
 
 .Error {
-    color: red;
+  color: red;
 }
 
 @media (max-width: 580px) {
-    .Contact {
-        width: auto;
-    }
+  .Contact {
+    width: auto;
+  }
 }

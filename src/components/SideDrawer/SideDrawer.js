@@ -6,23 +6,23 @@ import Footer from '../Footer/Footer.js';
 import './SideDrawer.css';
 
 const sideDrawer = (props) => {
-    let attatchedClasses = 'SideDrawer'
-    if (props.open) {
-        attatchedClasses = 'SideDrawer Open'
-    }
-    return (
-        <Aux>
-            <BackDrop 
-                show={props.open}
-                clicked={props.closed} />
-            <div className={attatchedClasses}>
-                <NavItems />
-                <div className="SideFooter">
-                    <Footer />
-                </div>
-            </div>
-        </Aux>
-    )
+  let attatchedClasses = 'SideDrawer'
+  if (props.open) {
+    attatchedClasses = 'SideDrawer Open'
+  }
+  return (
+    <Aux>
+      <BackDrop 
+        show={props.open}
+        clicked={props.closed} />
+      <div className={attatchedClasses}>
+        <NavItems />
+        <div className="SideFooter">
+          <Footer />
+        </div>
+      </div>
+    </Aux>
+  )
 };
 
 export default sideDrawer;

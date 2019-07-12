@@ -1,21 +1,21 @@
 .Home {
-    width: 100%;
+  width: 100%;
 }
 
 .Content {
-    width: 500px;
-    margin: auto;
-    text-align: center;
+  width: 500px;
+  margin: auto;
+  text-align: center;
 }
 
 @media (max-width: 540px) {
-    .Content {
-        width: auto;
-    } 
+  .Content {
+    width: auto;
+  } 
 }
 
 .Home > img {
-    width: 100%;
-    object-fit: cover;
-    height: 300px;
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
 }

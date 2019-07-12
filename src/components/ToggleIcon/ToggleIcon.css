@@ -1,17 +1,17 @@
 .ToggleIcon {
-    width: 35px;
-    height: 100%;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-items: center;
-    padding: 35px 0;
-    box-sizing: border-box;
-    cursor: pointer;
+  width: 35px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 0;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .ToggleIcon div {
-    width: 90%;
-    height: 3px;
-    background-color: black;
+  width: 90%;
+  height: 3px;
+  background-color: black;
 }

@@ -1,42 +1,42 @@
 .NavItems a{
-    display: grid;
-    width: 100%;
-    box-sizing: border-box;
-    height: 35px;
-    align-content: center;
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
+  display: grid;
+  width: 100%;
+  box-sizing: border-box;
+  height: 35px;
+  align-content: center;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
 .NavItems a:hover,
 .NavItems a:active,
 .NavItems a.active {
-    color: rgb(107, 81, 158);
-    border-bottom: 2px solid rgb(107, 81, 158);
-    /* border-bottom: 3px solid blue; */
-    /* color: rgb(42, 73, 152);
-    background-color: #c6c6c6;
-    border-bottom: 3px solid rgb(108, 114, 122); */
+  color: rgb(107, 81, 158);
+  border-bottom: 2px solid rgb(107, 81, 158);
+  /* border-bottom: 3px solid blue; */
+  /* color: rgb(42, 73, 152);
+  background-color: #c6c6c6;
+  border-bottom: 3px solid rgb(108, 114, 122); */
 }
 
 @media (max-width: 999px) {
 
-    .NavItems li {
-        width: 100%;
-    }
+  .NavItems li {
+    width: 100%;
+  }
 
-    .NavItems a {
-        height: 100%;
-        text-align: center;
-        text-align: left;
-        padding-left: 10px;
-    }
+  .NavItems a {
+    height: 100%;
+    text-align: center;
+    text-align: left;
+    padding-left: 10px;
+  }
 
-    .NavItems a:hover,
-    .NavItems a:active,
-    .NavItems a.active {
-        color: rgb(107, 81, 158);
-        border-bottom: none;
-    }
+  .NavItems a:hover,
+  .NavItems a:active,
+  .NavItems a.active {
+    color: rgb(107, 81, 158);
+    border-bottom: none;
+  }
 }
