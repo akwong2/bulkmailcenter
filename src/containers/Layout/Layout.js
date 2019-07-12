@@ -1,4 +1,4 @@
-import React, { Component } from './node_modules/react';
+import React, { Component } from 'react';
 import Navigation from '../../Components/Navigation/Navigation.js';
 import { Route } from './node_modules/react-router-dom';
 import SideDrawer from '../../Components/SideDrawer/SideDrawer.js';
