@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className={"Backgrounds"}>
         <BrowserRouter>
-            <Layout />
+          <Layout />
         </BrowserRouter>
       </div>
     );

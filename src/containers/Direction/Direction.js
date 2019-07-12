@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Hover from '../../Components/Hover/Hover';
 import './Direction.css';
-require('dotenv').config();
 
 class Direction extends Component {
 	state = {
