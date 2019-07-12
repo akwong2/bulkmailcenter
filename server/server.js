@@ -14,7 +14,7 @@ app.use(cors());
 // app.use(express.static(path.join(__dirname, 'build')))
 
 if (app.get('env') !== "development") {
-
+  require('dotenv').config() 
   app.use(express.static(path.join(__dirname, '../build')))
 
   app.get("*", (req, res) => {
