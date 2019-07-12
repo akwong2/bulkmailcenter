@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import './Contact.css';
 import contact from '../../assets/contact.jpg';
 
@@ -25,8 +25,13 @@ class Contact extends Component {
         const contact = {
             ...this.state
         }
-        axios.post(`http://${window.location.hostname}:5000/submitContact`, contact)
+        fetch('http://192.168.0.15:9000/api/submitContact', {
+            method: 'POST',
+            body: JSON.stringify(contact),
+            headers: { 'Content-Type': 'application/json'}
+        }) 
             .then(res => {
+                console.log(res)
                 this.setState({success: true})
             })
             .catch(err => {

@@ -26,6 +26,7 @@
     "server": "nodemon server/server.js",
     "dev": "concurrently \"npm start\" \"npm run server\""
   },
+  "proxy": "http://192.168.0.15:9000/api/",
   "eslintConfig": {
     "extends": "react-app"
   },
