@@ -22,24 +22,23 @@ class Contact extends Component {
 
   submitForm = (event) => {
     event.preventDefault();
-    // const contact = {
-    //   ...this.state
-    // }
-    // const url = `http://${window.location.hostname}:9000/api/submitContact`
-    console.log("submit form!")
-    // fetch(url, {
-    //   method: 'POST',
-    //   body: JSON.stringify(contact),
-    //   headers: { 'Content-Type': 'application/json'}
-    // }) 
-    // .then(res => {
-    //   console.log(res)
-    //   this.setState({success: true})
-    // })
-    // .catch(err => {
-    //   this.setState({success: false})
-    //   console.log(err)
-    // })
+    const contact = {
+      ...this.state
+    }
+    const url = `http://${window.location.hostname}:9000/api/submitContact`
+    fetch(url, {
+      method: 'POST',
+      body: JSON.stringify(contact),
+      headers: { 'Content-Type': 'application/json'}
+    }) 
+    .then(res => {
+      console.log(res)
+      this.setState({success: true})
+    })
+    .catch(err => {
+      this.setState({success: false})
+      console.log(err)
+    })
   }
   handleChange = (event) => {
     this.setState({[event.target.name] : event.target.value}); 
