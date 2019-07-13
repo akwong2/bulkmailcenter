@@ -10,17 +10,18 @@ const port = 9000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
+require('dotenv').config() 
 
 // app.use(express.static(path.join(__dirname, 'build')))
 
-if (app.get('env') !== "development") {
-  require('dotenv').config() 
+// if (app.get('env') == "production") {
+
   app.use(express.static(path.join(__dirname, '../build')))
 
   app.get("*", (req, res) => {
       res.sendFile(path.join(__dirname, '../build', 'index.html'))
   })
-}
+// }
 
 app.get("/api", (req, res) => {
   console.log(app.get('env'))
