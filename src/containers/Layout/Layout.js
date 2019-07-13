@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import Navigation from '../../Components/Navigation/Navigation';
+import Navigation from '../../components/Navigation/Navigation';
 import { Route } from 'react-router-dom';
-import SideDrawer from '../../Components/SideDrawer/SideDrawer';
-import Home from '../../Components/Home/home.js';
-import MailingServices from '../../Components/MailingServices/MailingServices';
-import DataProcessing from '../../Components/DataProcessing/DataProcessing';
-import DuplicationPrinting from '../../Components/Printing/Printing';
-import Procurement from '../../Components/Procurement/Procurement';
+import SideDrawer from '../../components/SideDrawer/SideDrawer';
+import Home from '../../components/Home/home.js';
+import MailingServices from '../../components/MailingServices/MailingServices';
+import DataProcessing from '../../components/DataProcessing/DataProcessing';
+import DuplicationPrinting from '../../components/Printing/Printing';
+import Procurement from '../../components/Procurement/Procurement';
 import Direction from '../Direction/Direction';
-import Testimonial from '../../Components/Testimonial/Testimonial';
+import Testimonial from '../../components/Testimonial/Testimonial';
 import Contact from '../Contact/Contact';
-import Footer from '../../Components/Footer/Footer';
+import Footer from '../../components/Footer/Footer';
 import './Layout.css';
 
 class Layout extends Component {

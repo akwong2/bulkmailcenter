@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Layout from './Containers/Layout/Layout.js';
+import Layout from './containers/Layout/Layout.js';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 

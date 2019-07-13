@@ -22,10 +22,10 @@ class Contact extends Component {
 
   submitForm = (event) => {
     event.preventDefault();
-    const contact = {
-      ...this.state
-    }
-    const url = `http://${window.location.hostname}:9000/api/submitContact`
+    // const contact = {
+    //   ...this.state
+    // }
+    // const url = `http://${window.location.hostname}:9000/api/submitContact`
     console.log("submit form!")
     // fetch(url, {
     //   method: 'POST',
