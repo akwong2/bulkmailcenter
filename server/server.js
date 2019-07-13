@@ -14,14 +14,14 @@ require('dotenv').config()
 
 // app.use(express.static(path.join(__dirname, 'build')))
 
-// if (app.get('env') == "production") {
+if (app.get('env') == "production") {
 
   app.use(express.static(path.join(__dirname, '../build')))
 
   app.get("*", (req, res) => {
-      res.sendFile(path.join(__dirname, '../build', 'index.html'))
+      res.sendFile(path.join(__dirname, '../build/index.html'))
   })
-// }
+}
 
 app.get("/api", (req, res) => {
   console.log(app.get('env'))
