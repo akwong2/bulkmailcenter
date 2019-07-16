@@ -2,7 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
-const path = require('path')
+const path = require('path');
+const https = require('https');
+const fs = require('fs');
 
 const app = express();
 const port = 9000;
@@ -61,4 +63,8 @@ app.get("/api/directionApi", (req, res) => {
   res.status(200).send({key: api})
 })
 
-app.listen(port, () => console.log(`Running on port: ${port}`));
+https.createServer({
+  key: fs.readFileSync('server.key'),
+  cert: fs.readFileSync('server.cert')
+}, app)
+.listen(port, () => console.log(`Running on port: ${port}`));
