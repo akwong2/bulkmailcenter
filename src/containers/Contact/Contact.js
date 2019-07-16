@@ -25,7 +25,7 @@ class Contact extends Component {
     const contact = {
       ...this.state
     }
-    const url = `http://bulkmailcenter.herokuapp.com:9000/api/submitContact`
+    const url = `http://${window.location.hostname}:9000/api/submitContact`
     fetch(url, {
       method: 'POST',
       body: JSON.stringify(contact),

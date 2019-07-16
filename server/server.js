@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(cors());
 require('dotenv').config() 
 
-if (app.get('env') == "production") {
+if (process.env.NODE_ENV === "production") {
 
   app.use(express.static(path.join(__dirname, '../build')))
 
