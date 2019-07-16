@@ -32,7 +32,7 @@ class Direction extends Component {
 				this.setState({api: data.key})
 			})
 			.catch(err => {
-				console.log(err)
+				console.log(JSON.stringify(err))
 			})
 	}
 
