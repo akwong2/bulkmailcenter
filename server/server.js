@@ -14,8 +14,6 @@ app.use(bodyParser.json());
 app.use(cors());
 require('dotenv').config() 
 
-// app.use(express.static(path.join(__dirname, 'build')))
-
 if (app.get('env') == "production") {
 
   app.use(express.static(path.join(__dirname, '../build')))
@@ -28,7 +26,6 @@ if (app.get('env') == "production") {
 app.get("/api", (req, res) => {
   console.log(app.get('env'))
   res.send(path.join(__dirname, '../build', 'index.html'))
-  // res.send("Welcome to the Server")
 })
 
 app.post("/api/submitContact", (req, res) => {
@@ -57,14 +54,9 @@ app.post("/api/submitContact", (req, res) => {
 });
 
 app.get("/api/directionApi", (req, res) => {
-  console.log("hello")
   let api = "";
   if (process.env.GOOGLEKEY !== undefined) api = process.env.GOOGLEKEY;
   res.status(200).send({key: api})
 })
 
-https.createServer({
-  key: fs.readFileSync('server.key'),
-  cert: fs.readFileSync('server.cert')
-}, app)
-.listen(port, () => console.log(`Running on port: ${port}`));
+listen(port, () => console.log(`Running on port: ${port}`));
