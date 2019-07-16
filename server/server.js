@@ -54,9 +54,12 @@ app.post("/api/submitContact", (req, res) => {
 });
 
 app.get("/api/directionApi", (req, res) => {
-  let api = "";
-  if (process.env.GOOGLEKEY !== undefined) api = process.env.GOOGLEKEY;
-  res.status(200).send({key: api})
+  if (process.env.GOOGLEKEY !== undefined) {
+    res.status(200).send({key: process.env.GOOGLEKEY})
+  }
+  else {
+    res.status(404).send({key: ""})
+  }
 })
 
 listen(port, () => console.log(`Running on port: ${port}`));
