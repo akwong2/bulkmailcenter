@@ -54,6 +54,8 @@ app.post("/api/submitContact", (req, res) => {
 });
 
 app.get("/api/directionApi", (req, res) => {
+  console.log("IN DIRECTION API")
+  console.log(process.env.GOOGLE_KEY)
   if (process.env.GOOGLE_KEY !== undefined) {
     res.status(200).send({key: process.env.GOOGLE_KEY})
   }

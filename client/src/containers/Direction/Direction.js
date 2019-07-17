@@ -23,7 +23,6 @@ class Direction extends Component {
 		// fetch('/directionApi')
 		// fetch('/api/directionApi')
 		const url = `/api/directionApi`
-		// const url = '/api/directionApi';
 		fetch(url)
 			.then(res => {
 				return res.json();
