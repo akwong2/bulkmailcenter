@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
 import Hover from '../../components/Hover/Hover';
 import './Direction.css';
+import axios from 'axios';
 
 class Direction extends Component {
 	state = {
@@ -19,22 +20,29 @@ class Direction extends Component {
 	};
 
 	componentWillMount() {
+		axios.get('/api/directionApi')
+			.then(res => {
+				this.setState({api: res.data.key});
+			})
+			.catch(err => {
+				console.log(err)
+			})
 		// console.log("MOUNTED!")
 		// fetch('/directionApi')
 		// fetch('/api/directionApi')
-		const url = `/api/directionApi`
-		fetch(url, {
-      		headers: { 'Content-Type': 'application/json'}
-		})
-			.then(res => {
-				return res.json();
-			})
-			.then(data => {
-				this.setState({api: data.key})
-			})
-			.catch(err => {
-				console.log(JSON.stringify(err))
-			})
+		// const url = `/api/directionApi`
+		// fetch(url, {
+      	// 	headers: { 'Content-Type': 'application/json'}
+		// })
+		// 	.then(res => {
+		// 		return res.json();
+		// 	})
+		// 	.then(data => {
+		// 		this.setState({api: data.key})
+		// 	})
+		// 	.catch(err => {
+		// 		console.log(JSON.stringify(err))
+		// 	})
 	}
 
 	childClick = (props) => {
