@@ -22,7 +22,7 @@ class Direction extends Component {
 		// console.log("MOUNTED!")
 		// fetch('/directionApi')
 		// fetch('/api/directionApi')
-		const url = `http://localhost:5000/api/directionApi`
+		const url = `/api/directionApi`
 		// const url = '/api/directionApi';
 		fetch(url)
 			.then(res => {

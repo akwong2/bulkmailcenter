@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navigation from '../../components/Navigation/Navigation';
 import { Route } from 'react-router-dom';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
-import Home from '../../components/Home/home.js';
+import Home from '../../components/Home/home';
 import MailingServices from '../../components/MailingServices/MailingServices';
 import DataProcessing from '../../components/DataProcessing/DataProcessing';
 import DuplicationPrinting from '../../components/Printing/Printing';
