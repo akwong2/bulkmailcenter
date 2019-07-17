@@ -20,8 +20,9 @@ class Direction extends Component {
 	};
 
 	componentWillMount() {
-		axios.get('/api/directionApi')
+		axios.get('/api/directionKey')
 			.then(res => {
+				console.log(res)
 				this.setState({api: res.data.key});
 			})
 			.catch(err => {
