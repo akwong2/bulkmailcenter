@@ -24,7 +24,7 @@
     "react-scripts": "2.1.2"
   },
   "scripts": {
-    "start": "npm run server",
+    "start": "npm run startServer",
     "heroku-postbuild": "npm install && npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
