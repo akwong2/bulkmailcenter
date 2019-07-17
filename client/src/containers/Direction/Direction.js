@@ -23,7 +23,9 @@ class Direction extends Component {
 		// fetch('/directionApi')
 		// fetch('/api/directionApi')
 		const url = `/api/directionApi`
-		fetch(url)
+		fetch(url, {
+      		headers: { 'Content-Type': 'application/json'}
+		})
 			.then(res => {
 				return res.json();
 			})
