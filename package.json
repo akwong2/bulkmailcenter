@@ -7,10 +7,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sendgrid/mail": "^6.4.0",
     "axios": "^0.19.0",
     "body-parser": "^1.19.0",
-    "concurrently": "^4.1.0",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
@@ -24,13 +22,15 @@
     "react-scripts": "2.1.2"
   },
   "scripts": {
-    "start": "react-scripts start && node server/server.js",
+    "start": "node server/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "startServer": "node server/server.js",
     "server": "nodemon server/server.js",
-    "dev": "concurrently \"npm start\" \"npm run server\""
+    "startReact": "react-scripts start",
+    "dev": "concurrently \"npm run startReact\" \"npm run server\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,6 +42,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "concurrently": "^4.1.0"
   }
 }
