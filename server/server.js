@@ -64,10 +64,8 @@ app.get("/api/directionApi", (req, res) => {
 
 const options = {
   key: fs.readFileSync('server.key'),
-  cert: fs.readFileSync('server.cert')
+  cert: fs.readFileSync('server.crt')
 };
 
-https.createServer(options, function (req, res) {
-  res.writeHead(200);
-  res.end("hello world\n");
-}).listen(port, () => console.log(`Running on port: ${port}`));
+https.createServer(options, app)
+.listen(port, () => console.log(`Running on port: ${port}`));
