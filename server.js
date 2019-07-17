@@ -53,14 +53,14 @@ app.post("/api/submitContact", (req, res) => {
   });
 });
 
-app.get("/api/directionKey", (req, res) => {
+app.get('/api/directionKey', (req, res) => {
   console.log("IN DIRECTION API")
   console.log(process.env.GOOGLE_KEY)
   if (process.env.GOOGLE_KEY !== undefined) {
-    res.status(200).send({key: process.env.GOOGLE_KEY})
+    res.status(200).json({key: process.env.GOOGLE_KEY})
   }
   else {
-    res.status(404).send({key: ""})
+    res.status(404).json({key: ""})
   }
 })
 
