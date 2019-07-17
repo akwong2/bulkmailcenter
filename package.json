@@ -31,7 +31,8 @@
     "eject": "react-scripts eject",
     "startServer": "node server/server.js",
     "server": "nodemon server/server.js",
-    "dev": "concurrently \"npm start\" \"npm run server\""
+    "reactStart": "react-scripts start",
+    "dev": "concurrently \"npm run reactStart\" \"npm run server\""
   },
   "eslintConfig": {
     "extends": "react-app"
