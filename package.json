@@ -24,15 +24,13 @@
     "react-scripts": "2.1.2"
   },
   "scripts": {
-    "start": "npm run startServer",
-    "heroku-postbuild": "npm install && npm run build",
+    "start": "react-scripts start && node server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "startServer": "node server/server.js",
     "server": "nodemon server/server.js",
-    "reactStart": "react-scripts start",
-    "dev": "concurrently \"npm run reactStart\" \"npm run server\""
+    "dev": "concurrently \"npm start\" \"npm run server\""
   },
   "eslintConfig": {
     "extends": "react-app"
