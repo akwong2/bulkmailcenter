@@ -67,5 +67,5 @@ const options = {
   cert: fs.readFileSync('server.crt')
 };
 
-https.createServer(options, app)
-.listen(port, () => console.log(`Running on port: ${port}`));
+// https.createServer(options, app).
+listen(port, () => console.log(`Running on port: ${port}`));
