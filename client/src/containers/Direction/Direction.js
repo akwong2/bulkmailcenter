@@ -26,7 +26,7 @@ class Direction extends Component {
     })
 			.then(res => {
 				this.setState({api: res.data.apiKey});
-			})
+      })
 			.catch(err => {
         console.log(err)
         this.setState({api: ""});

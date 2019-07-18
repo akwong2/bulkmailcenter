@@ -67,7 +67,7 @@ app.get('/api/directionKey', (req, res) => {
 
 app.post('/api/directionKey', (req, res) => {
   let id = req.body.id;
-  if (process.env.GOOGLE_KEY !== undefined && id === 12345) {
+  if (process.env.GOOGLE_KEY && id === 12345) {
     res.status(200).send({apiKey: process.env.GOOGLE_KEY})
   }
   else {
