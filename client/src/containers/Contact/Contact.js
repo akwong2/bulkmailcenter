@@ -32,6 +32,7 @@ class Contact extends Component {
       headers: { 'Content-Type': 'application/json'}
     }) 
     .then(res => {
+      console.log(res)
       this.setState({success: true})
     })
     .catch(err => {
