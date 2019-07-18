@@ -28,8 +28,9 @@ class Direction extends Component {
       }
     })
 			.then(res => {
-				console.log(res)
-				this.setState({api: res.data.key});
+        console.log(res);
+        console.log(res.data);
+				this.setState({api: res.data.apiKey});
 			})
 			.catch(err => {
 				console.log(err)

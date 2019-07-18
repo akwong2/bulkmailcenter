@@ -58,7 +58,7 @@ app.get('/api/directionKey', (req, res) => {
   console.log(process.env.GOOGLE_KEY)
   console.log(req.query)
   if (process.env.GOOGLE_KEY !== undefined) {
-    res.status(200).json({key: process.env.GOOGLE_KEY})
+    res.status(200).send({apiKey: process.env.GOOGLE_KEY})
   }
   else {
     res.status(404).json({key: ""})
