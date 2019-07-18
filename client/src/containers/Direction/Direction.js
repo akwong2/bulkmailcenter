@@ -19,8 +19,14 @@ class Direction extends Component {
 		zoom: 16
 	};
 
+
+
 	componentWillMount() {
-		axios.get('/api/directionKey')
+		axios.get('/api/directionKey', {
+      params: {
+        id: 12345
+      }
+    })
 			.then(res => {
 				console.log(res)
 				this.setState({api: res.data.key});
