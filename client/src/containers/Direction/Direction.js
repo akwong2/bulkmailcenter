@@ -28,7 +28,8 @@ class Direction extends Component {
 				this.setState({api: res.data.apiKey});
 			})
 			.catch(err => {
-				console.log(err)
+        console.log(err)
+        this.setState({api: ""});
 			})
   }
 
@@ -41,7 +42,7 @@ class Direction extends Component {
   }
 
 	childClick = (props) => {
-		window.location.href = "https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.8128413,-122.2799521,16z?hl=en"
+		window.location.href = "https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.8128413,-122.2799521,16z?hl=en&ouput=embed"
 	}
 
 	markerHover = (props) => {
