@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 const path = require('path');
+const enforce = require('express-sslify');
 const https = require('https');
 const fs = require('fs');
 
