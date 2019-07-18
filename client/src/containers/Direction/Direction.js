@@ -19,10 +19,8 @@ class Direction extends Component {
 		zoom: 16
 	};
 
-
-
-	componentWillMount() {
-		axios.get('/api/directionKey', {
+  grabApi = () => {
+    axios.get('/api/directionKey', {
       params: {
         id: 12345
       }
@@ -35,22 +33,10 @@ class Direction extends Component {
 			.catch(err => {
 				console.log(err)
 			})
-		// console.log("MOUNTED!")
-		// fetch('/directionApi')
-		// fetch('/api/directionApi')
-		// const url = `/api/directionApi`
-		// fetch(url, {
-      	// 	headers: { 'Content-Type': 'application/json'}
-		// })
-		// 	.then(res => {
-		// 		return res.json();
-		// 	})
-		// 	.then(data => {
-		// 		this.setState({api: data.key})
-		// 	})
-		// 	.catch(err => {
-		// 		console.log(JSON.stringify(err))
-		// 	})
+  }
+
+	componentWillMount() {
+		this.grabApi();
 	}
 
 	childClick = (props) => {
