@@ -21,6 +21,7 @@ class Direction extends Component {
 
   grabApi = () => {
     axios.get('/api/directionKey', {
+      headers: { 'Content-Type': 'application/json'},
       params: {
         id: 12345
       }
