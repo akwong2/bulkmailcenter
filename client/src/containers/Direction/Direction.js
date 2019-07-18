@@ -37,7 +37,7 @@ class Direction extends Component {
 	// 	this.grabApi();
   // }
   
-  componentDidMount() {
+  componentWillMount() {
     this.grabApi();
   }
 
