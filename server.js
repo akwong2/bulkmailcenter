@@ -15,7 +15,7 @@ app.use(cors());
 require('dotenv').config() 
 
 if (process.env.NODE_ENV === "production") {
-
+  console.log("production");
   app.use(express.static('client/build'));
 
   app.get("*", (req, res) => {
@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === "production") {
 
 app.get("/api", (req, res) => {
   console.log(app.get('env'))
-  res.send(path.join(__dirname, '../build', 'index.html'))
+  res.send(path.join(__dirname, 'client', 'build', 'index.html'))
 })
 
 app.post("/api/submitContact", (req, res) => {
@@ -48,7 +48,7 @@ app.post("/api/submitContact", (req, res) => {
       if (error) res.status(500).send('Internal Server Error')
       else {
           console.log('Email sent: ' + info.response);
-          res.status(200).send("OK")
+          res.status(200).send("OK");
       }
   });
 });

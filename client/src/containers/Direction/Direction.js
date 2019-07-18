@@ -21,10 +21,7 @@ class Direction extends Component {
 
   grabApi = () => {
     axios.get('/api/directionKey', {
-      headers: { 'Content-Type': 'application/json'},
-      params: {
-        id: 12345
-      }
+      headers: { 'Content-Type': 'application/json'}
     })
 			.then(res => {
         console.log(res);
@@ -36,9 +33,13 @@ class Direction extends Component {
 			})
   }
 
-	componentWillMount() {
-		this.grabApi();
-	}
+	// componentWillMount() {
+	// 	this.grabApi();
+  // }
+  
+  componentDidMount() {
+    this.grabApi();
+  }
 
 	childClick = (props) => {
 		window.location.href = "https://www.google.com/maps/dir//37.8129431,-122.2754464/@37.8128413,-122.2799521,16z?hl=en"
