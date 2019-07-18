@@ -20,7 +20,7 @@ class Direction extends Component {
 	};
 
   grabApi = () => {
-    axios.get('/api/directionKey', {
+    axios.post('/api/directionKey', {
       headers: { 'Content-Type': 'application/json'}
     })
 			.then(res => {

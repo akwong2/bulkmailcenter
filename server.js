@@ -65,6 +65,15 @@ app.get('/api/directionKey', (req, res) => {
   }
 })
 
+app.post('/api/directionKey', (req, res) => {
+  if (process.env.GOOGLE_KEY !== undefined) {
+    res.status(200).send({apiKey: process.env.GOOGLE_KEY})
+  }
+  else {
+    res.status(404).json({key: ""})
+  }
+})
+
 // const options = {
 //   key: fs.readFileSync('server.key'),
 //   cert: fs.readFileSync('server.crt')
