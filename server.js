@@ -29,7 +29,7 @@ app.get("/api", (req, res) => {
 })
 
 app.post("/api/submitContact", (req, res) => {
-  const {name, email, phone, comment} = req.body
+  const {name, email, phone, comment} = req.body.body
   let transporter = nodemailer.createTransport({
     host: 'smtp.mail.yahoo.com',
     port: 465,
@@ -44,7 +44,7 @@ app.post("/api/submitContact", (req, res) => {
   }); 
   let mailOptions = {
       from: process.env.GMAILUSER,
-      to: 'alvinkwongtest@gmail.com',
+      to: process.env.SENDTO,
       subject: `Contact Us Form - ${name}`,
       text: `name: ${name}\nemail: ${email}\nphone number: ${phone}\ncomment:\n${comment}\n`
   };

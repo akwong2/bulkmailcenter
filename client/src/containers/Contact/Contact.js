@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 import './Contact.css';
 import contact from '../../assets/contact.jpg';
 
@@ -25,18 +25,16 @@ class Contact extends Component {
     const contact = {
       ...this.state
     }
-    const url = `/api/submitContact`
-    fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(contact),
-      headers: { 'Content-Type': 'application/json'}
-    }) 
+    axios.post('/api/submitContact', {
+      headers: { 'Content-Type': 'application/json' },
+      body: contact
+    })
     .then(res => {
-      this.setState({ success: true })
+      this.setState({ success: true });
     })
     .catch(err => {
-      this.setState({ success: false })
       console.log(err)
+      this.setState({ success: false })
     })
   }
   handleChange = (event) => {
