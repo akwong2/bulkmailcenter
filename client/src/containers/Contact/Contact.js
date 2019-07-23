@@ -17,7 +17,7 @@ class Contact extends Component {
   }
 
   resetForm = () => {
-    this.setState(this.baseState);
+    this.setState( this.baseState );
   }
 
   submitForm = (event) => {
@@ -32,15 +32,15 @@ class Contact extends Component {
       headers: { 'Content-Type': 'application/json'}
     }) 
     .then(res => {
-      this.setState({success: true})
+      this.setState({ success: true })
     })
     .catch(err => {
-      this.setState({success: false})
+      this.setState({ success: false })
       console.log(err)
     })
   }
   handleChange = (event) => {
-    this.setState({[event.target.name] : event.target.value}); 
+    this.setState({ [event.target.name] : event.target.value }); 
   }
 
   render() {

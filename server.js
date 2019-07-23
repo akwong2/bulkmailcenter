@@ -17,7 +17,6 @@ app.use(enforce.HTTPS({ trustProtoHeader: true }))
 require('dotenv').config() 
 
 if (process.env.NODE_ENV === "production") {
-  console.log("production");
   app.use(express.static('client/build'));
 
   app.get("*", (req, res) => {
@@ -26,22 +25,25 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.get("/api", (req, res) => {
-  console.log(app.get('env'))
   res.send(path.join(__dirname, 'client', 'build', 'index.html'))
 })
 
 app.post("/api/submitContact", (req, res) => {
-  console.log("IN SUBMIT CONTACT")
   const {name, email, phone, comment} = req.body
   let transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
+    host: 'smtp.mail.yahoo.com',
+    port: 465,
+    service:'yahoo',
+    secure: false,
+    auth: {
         user: process.env.GMAILUSER,
         pass: process.env.GMAILPASS
-      }
+    },
+    debug: false,
+    logger: true
   }); 
   let mailOptions = {
-      from: 'alvinkwongtest@gmail.com',
+      from: process.env.GMAILUSER,
       to: 'alvinkwongtest@gmail.com',
       subject: `Contact Us Form - ${name}`,
       text: `name: ${name}\nemail: ${email}\nphone number: ${phone}\ncomment:\n${comment}\n`
@@ -56,9 +58,6 @@ app.post("/api/submitContact", (req, res) => {
 });
 
 app.get('/api/directionKey', (req, res) => {
-  console.log("IN DIRECTION API")
-  console.log(process.env.GOOGLE_KEY)
-  console.log(req.query)
   if (process.env.GOOGLE_KEY !== undefined) {
     res.status(200).send({apiKey: process.env.GOOGLE_KEY})
   }
@@ -77,10 +76,4 @@ app.post('/api/directionKey', (req, res) => {
   }
 })
 
-// const options = {
-//   key: fs.readFileSync('server.key'),
-//   cert: fs.readFileSync('server.crt')
-// };
-
-// https.createServer(options, app).
 app.listen(port, () => console.log(`Running on port: ${port}`));

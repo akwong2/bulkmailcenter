@@ -21,21 +21,17 @@ class Direction extends Component {
 
   grabApi = () => {
     axios.post('/api/directionKey', {
-      headers: { 'Content-Type': 'application/json'},
+      headers: { 'Content-Type': 'application/json' },
       id: 12345
     })
-			.then(res => {
-				this.setState({api: res.data.apiKey});
-      })
-			.catch(err => {
-        console.log(err)
-        this.setState({api: ""});
-			})
+    .then(res => {
+      this.setState({api: res.data.apiKey});
+    })
+    .catch(err => {
+      console.log(err)
+      this.setState({api: ""});
+    })
   }
-
-	// componentWillMount() {
-	// 	this.grabApi();
-  // }
   
   componentWillMount() {
     this.grabApi();
@@ -80,7 +76,6 @@ class Direction extends Component {
 			</div>
 		}
 		return (
-			// Important! Always set the container height explicitly
 			<div>
 				<h2>Directions</h2>
 				{show}

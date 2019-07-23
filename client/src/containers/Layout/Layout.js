@@ -21,12 +21,12 @@ class Layout extends Component {
 
   toggleIconHandler = () => {
     this.setState( (prevState) => {
-      return { showSideDrawer: !prevState.showSideDrawer}
+      return { showSideDrawer: !prevState.showSideDrawer }
     })
   }
 
   sideDrawerClosedHandler = () => {
-    this.setState({ showSideDrawer: false})
+    this.setState({ showSideDrawer: false })
   }
   
   render() {
@@ -47,7 +47,7 @@ class Layout extends Component {
           <Route path="/procurement" exact component={Procurement} />
           <Route path="/testimonial" exact component={Testimonial} />
           <Route path="/contact" exact component={Contact} />
-          <Route path="/direction" exact component={Direction}/>
+          <Route path="/direction" exact component={Direction} />
         </div>
         <div className="Footer">
           <Footer />
