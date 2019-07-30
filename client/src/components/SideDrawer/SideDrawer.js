@@ -16,7 +16,8 @@ const sideDrawer = (props) => {
         show={props.open}
         clicked={props.closed} />
       <div className={attatchedClasses}>
-        <NavItems />
+        <NavItems 
+          clicked={props.closed} />
         <div className="SideFooter">
           <Footer />
         </div>

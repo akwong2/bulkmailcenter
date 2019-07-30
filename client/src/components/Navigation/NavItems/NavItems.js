@@ -6,14 +6,14 @@ const navItems = (props) => {
   return (
     <div className="NavItems"> 
       <ul>
-        <li><NavLink to="/" exact>Home</NavLink></li>
-        <li><NavLink to="/mail">Mail</NavLink></li>
+        <li onClick={props.clicked}><NavLink to="/" exact>Home</NavLink></li>
+        <li onClick={props.clicked}><NavLink to="/mail">Mail</NavLink></li>
         {/* <li><NavLink to="/data">Processing</NavLink></li>
         <li><NavLink to="/print">Printing</NavLink></li>
         <li><NavLink to="/procurement">Procurement</NavLink></li> */}
-        <li><NavLink to="/testimonial">Testimonial</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
-        <li><NavLink to="/direction">Directions</NavLink></li>
+        <li onClick={props.clicked}><NavLink to="/testimonial">Testimonial</NavLink></li>
+        <li onClick={props.clicked}><NavLink to="/contact">Contact</NavLink></li>
+        <li onClick={props.clicked}><NavLink to="/direction">Directions</NavLink></li>
       </ul>
     </div>
   )

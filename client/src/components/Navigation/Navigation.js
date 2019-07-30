@@ -19,7 +19,8 @@ class Navigation extends Component {
           </div>
         </div>
         <div className="Navigation">
-          <NavItems />
+          <NavItems 
+            clicked={this.props.clicked}/>
         </div>
         <div className="Control">
         </div>
