@@ -10,97 +10,43 @@ const testimonial = (props) => {
         <img src={handshake} alt="testinmonialPic" />
         <div className="TestimonialContent">
           <p>
-            As the executive director of a nonprofit public benefit organization I have 
-            found that the service and support from the City Print and Mail has been 
-            exceptional. From helping me with design issues to guiding our projects to 
-            completion, the staff of City Print and Mail have been wonderful to work with.
+            I've worked with Harry at City Print and Mail for a few years now, 
+            they make the whole process easy. I just email them what I need and 
+            how many, they take my mailing list and get it all done in short order. 
+            I don't have to leave my office or anything to get the job done. I'll 
+            continue to use them, it's great to be able to work with local businesses.
             <br/>
             <br/>
-            Charles Mead
-            <br/>
-            Executive Director
-            <br/>
-            Marin Advocates for Children
+            - Richard M.
           </p>
-          {/* <hr/> */}
           <p>
-            Harry & Calvin, 
+            Harry and Calvin have been taking care of all of our printing needs for 
+            several years.  It is a pleasure to work with both of them.  They are 
+            always on time, even if we aren't.  They work hard for us and we thoroughly 
+            appreciate it.  The print and binding quality is terrific.  They go the 
+            extra mile for us each and every job we give them.  We would not go 
+            anywhere else for our print/binding/drop shipment services.
             <br/>
-            Thanks again for all the hard work and extra effort in helping our department 
-            succeed.
             <br/>
-            <br/>
-            Have a great holiday.
-            <br/>
-            <br/>
-            Brian Miller
-            <br/>
-            Director of Membership
-            <br/>
-            The Club at The Claremont
+            - Patricia G.
           </p>
-          {/* <hr/> */}
           <p>
-            Hi Harry,
+            Great service and great prices. Harry & Calvin are always very responsive 
+            and get everything done in a very timely manner. They're pretty flexible 
+            with your timelines. We've never had issues with them and we've been 
+            working with them for our printing and mailing needs for years.
             <br/>
-            Just wanted to let you know the Postcards are a hit with people here in the 
-            office.  Between Karen's design and your new coating on the card, it really 
-            gets a lot of notice.  Keep up the good work!
             <br/>
-            <br/>
-            Thanks,
-            <br/>
-            Marilyn
-            <br/>
-            Scientific Learning
-            <br/>
-            Marketing Services Manager
-            <br/>
+            - E C.
           </p>
-          {/* <hr/> */}
           <p>
-            Harry,
-            <br/>
-            Thank you so much for the chocolates and for bringing over the leftover 
-            supplies. It was so nice to finally meet Calvin and I hope we're able to 
-            connect someday soon as well.  You've been such a wonderfully helpful 
-            group to work with.
+            Top Class customer service. Calvin is easy to work with and communicates 
+            very clearly. He has patience and knowledge, with A-1 customer service. 
+            I was researching a project for my boss and he provided a quote in less 
+            than 24 hours. He is the go to guy !!!
             <br/>
             <br/>
-            I hope you had a fabulous holiday!
-            <br/>
-            Mary
-            <br/>   
-            Global Exchange
-          </p>
-          {/* <hr/> */}
-          <p>
-            Thanks Harry. You continue to be the best!
-            <br/>
-            Stacey
-            <br/>
-            <br/>
-            Stacey Simon, Director
-            <br/>
-            Communications/Marketing
-            <br/>
-            Jewish Community Federation of the Greater East Bay
-          </p>
-          {/* <hr/> */}
-          <p>
-            Calvin,
-            <br/>
-            Your work is wonderful. Yours and Harry's attitude (you are the only two I 
-            have had the pleasure of speaking with) is wonderful. Results are 
-            wonderful.  I guess that you can say that you are doing WONDERFUL!
-            Actually, I just had a pretty bad experience with one of my clients and 
-            another mailing house, so the next time that they need a mailing, we will be 
-            moving it over to you.
-            <br/>
-            <br/>
-            Thank you for all your hard work and getting the jobs done on time.
-            <br/>
-            Roxann
+            - Virigina L.
           </p>
         </div>
       </div>
